@@ -20,6 +20,7 @@
 		E1A4159CB5CA45DEA6027B1F /* Urbanist-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6FA1B8F04E04CFE8880B49B /* Urbanist-Regular.ttf */; };
 		E15062EAEAB140709A79A547 /* Urbanist-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2DD788662E84F2C99FC0A50 /* Urbanist-SemiBold.ttf */; };
 		D3CB5A5427FD49FB940917BC /* Urbanist-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E206307FF2DE4973893DA571 /* Urbanist-Thin.ttf */; };
+		D8020AB41F22493F9BBD1349 /* helper.ts in Resources */ = {isa = PBXBuildFile; fileRef = 2EB9F64621BB4F8795D8999C /* helper.ts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B6FA1B8F04E04CFE8880B49B /* Urbanist-Regular.ttf */ = {isa = PBXFileReference; name = "Urbanist-Regular.ttf"; path = "../assets/fonts/Urbanist-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		C2DD788662E84F2C99FC0A50 /* Urbanist-SemiBold.ttf */ = {isa = PBXFileReference; name = "Urbanist-SemiBold.ttf"; path = "../assets/fonts/Urbanist-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		E206307FF2DE4973893DA571 /* Urbanist-Thin.ttf */ = {isa = PBXFileReference; name = "Urbanist-Thin.ttf"; path = "../assets/fonts/Urbanist-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2EB9F64621BB4F8795D8999C /* helper.ts */ = {isa = PBXFileReference; name = "helper.ts"; path = "../assets/fonts/helper.ts"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				B6FA1B8F04E04CFE8880B49B /* Urbanist-Regular.ttf */,
 				C2DD788662E84F2C99FC0A50 /* Urbanist-SemiBold.ttf */,
 				E206307FF2DE4973893DA571 /* Urbanist-Thin.ttf */,
+				2EB9F64621BB4F8795D8999C /* helper.ts */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				E1A4159CB5CA45DEA6027B1F /* Urbanist-Regular.ttf in Resources */,
 				E15062EAEAB140709A79A547 /* Urbanist-SemiBold.ttf in Resources */,
 				D3CB5A5427FD49FB940917BC /* Urbanist-Thin.ttf in Resources */,
+				D8020AB41F22493F9BBD1349 /* helper.ts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,6 +2,10 @@
   "migIndex": 1,
   "data": [
     {
+      "path": "assets/fonts/helper.ts",
+      "sha1": "e1f8e3d2f00bd08a6db36792d62f24976ec0e462"
+    },
+    {
       "path": "assets/fonts/Urbanist-Black.ttf",
       "sha1": "516d2b16481f274b7b5d4a61eb317e6e77892671"
     },
