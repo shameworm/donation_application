@@ -1,20 +1,20 @@
-import {Pressable, Text} from 'react-native';
-import {getVariantStyles, getTextStyle} from './utils';
+import {Pressable} from 'react-native';
+
+import {getVariantStyles} from './utils';
 
 type ButtonProps = {
   onPress: () => void;
-  title: string;
+  children: React.ReactNode;
   variant?: 'primary' | 'secondary' | 'link' | 'custom';
   styles?: object;
   textStyles?: object;
 };
 
 export function Button({
-  title,
   onPress,
   variant = 'primary',
   styles: customStyles = {},
-  textStyles = {},
+  children,
 }: ButtonProps): React.JSX.Element {
   return (
     <Pressable
@@ -23,7 +23,7 @@ export function Button({
         {opacity: pressed ? 0.5 : 1},
         ...[].concat(getVariantStyles(variant, customStyles) as any),
       ]}>
-      <Text style={getTextStyle(variant, textStyles)}>{title}</Text>
+      {children}
     </Pressable>
   );
 }

@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {getFontFamily} from '~/assets/fonts/helper';
+
 import {horizontalScale, verticalScale} from '~/assets/styles/scaling';
 
 export const styles = StyleSheet.create({
@@ -25,21 +25,5 @@ export const styles = StyleSheet.create({
     paddingVertical: verticalScale(8),
     alignItems: 'center',
     justifyContent: 'center',
-  },
-
-  textPrimary: {
-    color: '#FFFFFF',
-    fontFamily: getFontFamily(600),
-    fontSize: 16,
-  },
-  textSecondary: {
-    color: '#79869F',
-    fontFamily: getFontFamily(600),
-    fontSize: 16,
-  },
-  textLink: {
-    color: '#2979F2',
-    fontFamily: getFontFamily(600),
-    fontSize: 16,
   },
 });

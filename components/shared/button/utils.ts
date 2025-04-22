@@ -11,22 +11,3 @@ export const getVariantStyles = (
   }
   return [mainStyles[variant], customStyles];
 };
-
-export const getTextStyle = (
-  variant: Variant,
-  customTextStyles?: object,
-): object => {
-  if (variant === 'custom') {
-    return customTextStyles || {};
-  }
-
-  switch (variant) {
-    case 'secondary':
-      return mainStyles.textSecondary;
-    case 'link':
-      return mainStyles.textLink;
-    case 'primary':
-    default:
-      return mainStyles.textPrimary;
-  }
-};
