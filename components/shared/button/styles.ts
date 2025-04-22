@@ -11,19 +11,14 @@ export const styles = StyleSheet.create({
     paddingVertical: verticalScale(8),
     justifyContent: 'center',
   },
-  secondary: {
-    borderRadius: horizontalScale(999),
-    backgroundColor: '#F3F5F9',
-    paddingHorizontal: horizontalScale(16),
-    paddingVertical: verticalScale(8),
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
   link: {
     backgroundColor: 'transparent',
     paddingHorizontal: horizontalScale(16),
     paddingVertical: verticalScale(8),
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  disabled: {
+    opacity: 0.5,
   },
 });

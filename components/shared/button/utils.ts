@@ -1,6 +1,6 @@
 import {styles as mainStyles} from './styles';
 
-type Variant = 'primary' | 'secondary' | 'link' | 'custom';
+type Variant = 'primary' | 'link' | 'custom';
 
 export const getVariantStyles = (
   variant: Variant,
