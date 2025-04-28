@@ -10,6 +10,7 @@ module.exports = {
           '~/components': './components',
           '~/screens': './screens',
           '~/navigation': './navigation',
+          '~/redux': './redux',
         },
       },
     ],
