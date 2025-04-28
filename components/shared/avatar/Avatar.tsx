@@ -1,15 +1,18 @@
-import {View, Image} from 'react-native';
+import {View, Image, ImageProps} from 'react-native';
 
 import {styles} from './styles';
 
 type AvatarProps = {
-  avatar: number;
-  viewed?: boolean;
-};
-export function Avatar({avatar}: AvatarProps): React.JSX.Element {
+  avatar: string;
+} & Omit<ImageProps, 'source'>;
+export function Avatar({avatar, ...props}: AvatarProps): React.JSX.Element {
   return (
-    <View style={styles.userProfileImageContainer}>
-      <Image style={styles.userProfileImage} source={avatar} />
+    <View>
+      <Image
+        style={styles.userProfileImage}
+        source={{uri: avatar}}
+        {...props}
+      />
     </View>
   );
 }
