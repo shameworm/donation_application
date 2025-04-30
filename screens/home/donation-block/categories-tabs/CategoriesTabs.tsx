@@ -6,10 +6,10 @@ import {Tab} from '~/components/shared/tab/Tab';
 
 import {styles} from './styles';
 import {updateSelectedCategoryId} from '~/redux/reducers/Categories';
-import {Title} from '../shared/title/Title';
+import {Title} from '../../../../components/shared/title/Title';
 import {useInfiniteScroll} from '~/hooks/infinite-scroll/useInfiniteScroll';
 
-export function Categories() {
+export function CategoriesTabs() {
   const categoriesPageSize = 4;
   const categories = useSelector((state: RootState) => state.categories);
   const dispatch = useDispatch();

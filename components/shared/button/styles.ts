@@ -21,4 +21,11 @@ export const styles = StyleSheet.create({
   disabled: {
     opacity: 0.5,
   },
+  backButton: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: horizontalScale(44),
+    borderRadius: horizontalScale(26),
+    marginTop: verticalScale(7),
+  },
 });

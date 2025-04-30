@@ -1,4 +1,13 @@
-export const items = [
+export type DonationItem = {
+  name: string;
+  description: string;
+  image: string;
+  donationItemId: number;
+  categoryIds: number[];
+  price: string;
+};
+
+export const items: DonationItem[] = [
   {
     name: 'Solar-powered lantern',
     description:
