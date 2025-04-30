@@ -13,6 +13,7 @@ import {faSearch} from '@fortawesome/free-solid-svg-icons';
 
 export function Header(): React.JSX.Element {
   const user = useSelector((state: RootState) => state.user);
+
   return (
     <View style={styles.topBarContainer}>
       <View style={styles.headerContainer}>

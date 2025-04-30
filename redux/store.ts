@@ -1,10 +1,12 @@
 import {combineReducers, configureStore} from '@reduxjs/toolkit';
-import {createLogger} from 'redux-logger';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {persistReducer, persistStore} from 'redux-persist';
-import User from './reducers/User';
+import {createLogger} from 'redux-logger';
 
-const rootReducer = combineReducers({user: User});
+import User from './reducers/User';
+import Categories from './reducers/Categories';
+
+const rootReducer = combineReducers({user: User, categories: Categories});
 
 const logger = __DEV__ ? createLogger() : undefined;
 

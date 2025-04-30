@@ -4,19 +4,21 @@ import {Pressable, Text} from 'react-native';
 import {styles} from './styles';
 
 type TabProps = {
-  onPress: () => void;
+  tabId: number;
   title: string;
   isInactive?: boolean;
+  onPress: (value: any) => void;
 };
 
 export function Tab({
-  onPress,
+  tabId,
   title,
   isInactive = false,
+  onPress,
 }: TabProps): React.JSX.Element {
   return (
     <Pressable
-      onPress={onPress}
+      onPress={() => onPress(tabId)}
       style={({pressed}) => [
         {opacity: pressed ? 0.5 : 1},
         styles.activeTab,

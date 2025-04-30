@@ -9,12 +9,13 @@ import {
 export const styles = StyleSheet.create({
   activeTab: {
     borderRadius: horizontalScale(999),
-    height: verticalScale(55),
+    height: verticalScale(50),
     backgroundColor: '#2979F2',
     alignItems: 'center',
     paddingHorizontal: horizontalScale(16),
     paddingVertical: verticalScale(8),
     justifyContent: 'center',
+    minWidth: horizontalScale(135),
   },
   incativeTab: {
     backgroundColor: '#F3F5F9',
