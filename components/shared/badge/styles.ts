@@ -13,6 +13,7 @@ export const styles = StyleSheet.create({
     backgroundColor: '#145855',
     paddingHorizontal: horizontalScale(10),
     paddingVertical: verticalScale(5),
+    maxWidth: '100%',
   },
   badgeText: {
     color: '#fff',

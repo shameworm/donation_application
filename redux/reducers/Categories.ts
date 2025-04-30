@@ -3,7 +3,7 @@ import {createSlice} from '@reduxjs/toolkit';
 import {categories} from './__mocks__/categories-mock';
 
 const initialState = {
-  categories: categories,
+  categories,
   selectedCategoryId: 1,
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 import {ScrollView} from 'react-native';
 
 import {ScreenContainer} from '~/components/shared/screen-container/ScreenContainer';
-import {DonationDetails} from './DonationDetails';
+import {DonationDetails} from './donation-details/DonationDetails';
 
 export function DonationScreen(): React.JSX.Element {
   return (

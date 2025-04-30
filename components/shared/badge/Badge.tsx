@@ -8,7 +8,9 @@ type BadgeProps = {
 export function Badge({title}: BadgeProps): React.JSX.Element {
   return (
     <View style={styles.badgeContainer}>
-      <Text style={styles.badgeText}>{title}</Text>
+      <Text style={styles.badgeText} numberOfLines={1}>
+        {title}
+      </Text>
     </View>
   );
 }

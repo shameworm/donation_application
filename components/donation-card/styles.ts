@@ -12,7 +12,8 @@ export const styles = StyleSheet.create({
     position: 'absolute',
     zIndex: 1,
     top: verticalScale(13),
-    left: horizontalScale(10),
+    left: horizontalScale(5),
+    right: horizontalScale(15),
   },
   donationInfo: {
     marginTop: verticalScale(16),

@@ -13,7 +13,7 @@ import {styles} from './styles';
 import {updateSelectedDonationId} from '~/redux/reducers/Donations';
 
 export function DonationsList() {
-  const navigation = useNavigation();
+  const navigation = useNavigation<any>();
   const {categories, selectedCategoryId} = useSelector(
     (state: RootState) => state.categories,
   );
@@ -33,24 +33,28 @@ export function DonationsList() {
 
   return (
     <View style={styles.donationItemsContainer}>
-      {donationsFilteredItems.map(item => (
-        <View key={item.donationItemId} style={styles.singleDonationItem}>
-          <DonationCard
-            onPress={donationId => {
-              dispatch(updateSelectedDonationId(donationId));
-              navigation.navigate(routes.Donation as never);
-            }}
-            donationItemId={item.donationItemId}
-            badgeTitle={
-              categories.filter(val => val.categoryId === selectedCategoryId)[0]
-                .name
-            }
-            donationTitle={item.name}
-            price={parseFloat(item.price)}
-            uri={item.image}
-          />
-        </View>
-      ))}
+      {donationsFilteredItems.map(item => {
+        const categoryInfo = categories.find(
+          val => val.categoryId === selectedCategoryId,
+        );
+        return (
+          <View key={item.donationItemId} style={styles.singleDonationItem}>
+            <DonationCard
+              onPress={donationId => {
+                dispatch(updateSelectedDonationId(donationId));
+                navigation.navigate(routes.Donation, {
+                  categoryInfo,
+                });
+              }}
+              donationItemId={item.donationItemId}
+              badgeTitle={categoryInfo!.name}
+              donationTitle={item.name}
+              price={parseFloat(item.price)}
+              uri={item.image}
+            />
+          </View>
+        );
+      })}
     </View>
   );
 }
