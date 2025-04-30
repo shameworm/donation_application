@@ -1,12 +1,10 @@
-import {View, Text} from 'react-native';
-import {faWallet} from '@fortawesome/free-solid-svg-icons';
-import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+import {View} from 'react-native';
 import {useSelector} from 'react-redux';
+import {faWallet} from '@fortawesome/free-solid-svg-icons';
 
-import {horizontalScale} from '~/assets/styles/scaling';
-import {useFilteredDonations} from '~/hooks/filtered-donations/useFilteredDonations';
-import {Title} from '~/components/shared/title/Title';
 import {DonationCard} from '~/components/donation-card/DonationCard';
+import {Fallback} from '~/components/shared/fallback/Fallback';
+import {useFilteredDonations} from '~/hooks/filtered-donations/useFilteredDonations';
 import {RootState} from '~/redux/store';
 
 import {styles} from './styles';
@@ -20,19 +18,11 @@ export function Donations() {
 
   if (donationsFilteredItems.length <= 0) {
     return (
-      <View style={styles.fallbackContainer}>
-        <FontAwesomeIcon
-          icon={faWallet}
-          style={styles.fallbackImage}
-          size={horizontalScale(150)}
-        />
-        <Title type="screen" style={styles.fallbackTitle}>
-          No donations found
-        </Title>
-        <Text style={styles.fallbackSubtitle}>
-          Try adjusting your filters or check back later.
-        </Text>
-      </View>
+      <Fallback
+        title="No donations found"
+        subtitle="Try adjusting your filters or check back later."
+        icon={faWallet}
+      />
     );
   }
 
