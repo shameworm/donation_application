@@ -11,7 +11,7 @@ import {RootState} from '~/redux/store';
 import {styles} from './styles';
 import {faSearch} from '@fortawesome/free-solid-svg-icons';
 
-export function TopBar(): React.JSX.Element {
+export function Header(): React.JSX.Element {
   const user = useSelector((state: RootState) => state.user);
   return (
     <View style={styles.topBarContainer}>
