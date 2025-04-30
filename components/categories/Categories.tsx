@@ -20,7 +20,7 @@ export function Categories() {
   });
 
   return (
-    <View style={styles.categoryTabsContainer}>
+    <View>
       <View>
         <Title type="screen" style={styles.headerTitle}>
           Select Category
