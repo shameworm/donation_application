@@ -7,7 +7,9 @@
       "~/components/*": ["components/*"],
       "~/screens/*": ["screens/*"],
       "~/navigation/*": ["navigation/*"],
-      "~/redux/*": ["redux/*"]
+      "~/redux/*": ["redux/*"],
+      "~/hooks/*": ["hooks/*"],
+      "~/utils/*": ["utils/*"]
     }
   }
 }

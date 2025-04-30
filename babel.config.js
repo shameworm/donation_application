@@ -11,6 +11,8 @@ module.exports = {
           '~/screens': './screens',
           '~/navigation': './navigation',
           '~/redux': './redux',
+          '~/hooks': './hooks',
+          '~/utils': './utils',
         },
       },
     ],
