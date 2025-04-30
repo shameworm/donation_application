@@ -9,7 +9,9 @@ import {
 export const styles = StyleSheet.create({
   donationItemsContainer: {
     flex: 1,
-    padding: horizontalScale(16),
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    flexWrap: 'wrap',
     marginTop: verticalScale(16),
   },
   fallbackContainer: {
@@ -28,5 +30,9 @@ export const styles = StyleSheet.create({
     fontSize: scaleFontSize(14),
     color: '#666',
     textAlign: 'center',
+  },
+  singleDonationItem: {
+    maxWidth: '49%',
+    marginBottom: verticalScale(24),
   },
 });

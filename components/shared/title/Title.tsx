@@ -19,7 +19,10 @@ export function Title({
   const textStyle = styles[type];
 
   return (
-    <Text style={[textStyle, style]} {...props}>
+    <Text
+      style={[textStyle, style]}
+      {...props}
+      numberOfLines={type === 'card' ? 1 : undefined}>
       {children}
     </Text>
   );

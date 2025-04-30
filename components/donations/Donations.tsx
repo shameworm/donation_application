@@ -39,20 +39,21 @@ export function Donations() {
   return (
     <View style={styles.donationItemsContainer}>
       {donationsFilteredItems.map(item => (
-        <DonationCard
-          onPress={donationId => {
-            console.log('Pressed donation:', donationId);
-          }}
-          donationItemId={item.donationItemId}
-          badgeTitle={
-            categories.filter(val => val.categoryId === selectedCategoryId)[0]
-              .name
-          }
-          key={item.donationItemId}
-          donationTitle={item.name}
-          price={parseFloat(item.price)}
-          uri={item.image}
-        />
+        <View key={item.donationItemId} style={styles.singleDonationItem}>
+          <DonationCard
+            onPress={donationId => {
+              console.log('Pressed donation:', donationId);
+            }}
+            donationItemId={item.donationItemId}
+            badgeTitle={
+              categories.filter(val => val.categoryId === selectedCategoryId)[0]
+                .name
+            }
+            donationTitle={item.name}
+            price={parseFloat(item.price)}
+            uri={item.image}
+          />
+        </View>
       ))}
     </View>
   );
